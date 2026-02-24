@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mini CRM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="home-page">
+    <div class="crm-home">
+      <div class="crm-card">
+        <div class="crm-header">
+          <h1>Mini CRM</h1>
+          <p>Client Lead Management</p>
+        </div>
+
+        <div class="crm-form">
+          <div class="form-group">
+            <input id="name" type="text" placeholder="Client Name" />
+            <input id="email" type="email" placeholder="Email" />
+            <input id="source" type="text" placeholder="Lead Source" />
+          </div>
+
+          <div class="form-actions">
+            <button class="add-btn" onclick="addLead()">
+              <span>＋</span> Add Lead
+            </button>
+
+            <a href="dashboard.html" class="dashboard-link">
+              Go to Dashboard →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
