@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Leads Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dashboard-page">
+    <div class="dashboard-wrapper">
+      <div class="dashboard-card">
+        <div class="dashboard-header">
+          <h1>📊 Leads Dashboard</h1>
+          <button class="export-btn" onclick="exportToExcel()">
+            ⬇ Export CSV
+          </button>
+        </div>
+
+        <table class="leads-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Source</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="leadTable">
+            <!-- JS injects rows here -->
+          </tbody>
+        </table>
+
+        <a href="index.html" class="back-link">← Back</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
